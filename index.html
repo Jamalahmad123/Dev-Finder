@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/660feba94e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Frontend Mentor | Github user search app</title>
+  </head>
+  <body>
+    <main class="main container">
+      <!-- navbar -->
+      <nav class="navbar flex justify-bt align-center">
+        <h1 class="logo">devfinder</h1>
+        <h2 class="mode flex align-center">
+          <span class="text">Dark</span>
+          <img src="./images/icon-moon.svg" alt="icon-moon" class="mode-icon" />
+          
+        </h2>
+      </nav>
+
+      <!-- search -->
+      <form id="form">
+        <div class="input-group flex align-center justify-bt">
+          <!-- <img src="./images/icon-search.svg" alt="icon-search" /> -->
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          <input type="text" class="input-el" placeholder="Search Github username..."/>
+          <span class="error-msg" hidden>no results</span>
+          <button class="btn btn-search">Search</button>
+        </div>
+      </form>
+
+      <!-- user details -->
+      <article class="card flex">
+        <!-- header -->
+        <header class="header flex align-center">
+          <img src="./images/583231.png" alt="user-profile" class="profile-img">
+          <div class="user-info flex justify-bt">
+            <div>
+              <h2 class="name">The Octocat</h2>
+              <a href="#" class="username" target="_blank">@octocat</a>
+            </div>
+            <span class="since">Joined 25 jan 2021</span>
+          </div>
+        </header>
+        <p class="user-bio">This profile has no bio</p>
+        <!-- repos, followers and following -->
+        <ul class="user-media flex justify-bt align-center">
+          <li>
+            <span>repos</span>
+            <h2 class="repos">8</h2>
+
+          </li>
+          <li>
+            <span>followers</span>
+            <h2 class="followers">3947</h2>
+          </li>
+          <li>
+            <span>following</span>
+            <h2 class="following">9</h2>
+          </li>
+        </ul>
+
+        <!-- user location, social media, blog, company -->
+        <ul class="user-data flex justify-bt">
+          <li>
+            <!-- <img src="./images/icon-location.svg" alt="icon-location"> -->
+            <i class="fa-solid fa-location-pin fa-lg"></i>
+            <p class="location">san francisco</p>
+          </li>
+          <li>
+            <!-- <img src="./images/icon-website.svg" alt="icon-website"> -->
+            <i class="fa-solid fa-link fa-lg"></i>
+            <a href="#" class="blog" target="_blank">not available</a>
+          </li>
+          <li>
+            <!-- <img src="./images/icon-twitter.svg" alt="icon-twitter"> -->
+            <i class="fa-brands fa-twitter fa-lg"></i>
+            <a href="#" class="twitter" target="_blank">Not available</a>
+          </li>
+          <li>
+            <!-- <img src="./images/icon-company.svg" alt="icon-company"></li> -->
+            <i class="fa-solid fa-building fa-lg"></i>
+          <p class="company" >Company</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
