@@ -57,7 +57,12 @@ function updateUserProfile(data) {
   // setting Attribute
   get(".profile-img").setAttribute("src", avatar);
   get(".username").setAttribute("href", githubLink);
-  get(".blog").setAttribute("href", blog);
+  get(".blog").setAttribute(
+    "href",
+    data.blog
+      ? (String(data.blog).includes("https://") ? "" : "https://") + data.blog
+      : ""
+  );
   get(".twitter").setAttribute("href", `https://twitter.com/${twitter}`);
 
   // textContent
