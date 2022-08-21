@@ -65,6 +65,8 @@ function updateUserProfile(data) {
   );
   get(".twitter").setAttribute("href", `https://twitter.com/${twitter}`);
 
+  console.log(data);
+
   // textContent
   get(".name").textContent = name;
   get(".repos").textContent = repos;
