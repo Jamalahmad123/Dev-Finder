@@ -1,17 +1,3 @@
-/* :root {
-  --clr-blue: #0077ff;
-  --clr-white: #fff;
-  --clr-red: #f64646;
-  --clr-grayish-blue: #697c9b;
-  --clr-desautareted-blue: #4b699b;
-  --clr-dark-blue: #2a3341;
-  --clr-saturated-white: #f5f7ff;
-  --clr-very-dark-blue: #141d2e;
-  --clr-dark-desaturated-blue: #1e2b48;
-  --clr-hover-blue: #61abff;
-  --sh-box: 0px 16px 30px -10px rgba(70, 96, 187, 0.1986);
-} */
-
 :root {
   --lm-bg: #f6f8ff;
   --lm-bg-content: #fefefe;
